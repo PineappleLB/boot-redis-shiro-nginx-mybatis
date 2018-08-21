@@ -1,0 +1,1 @@
+用nginx+tomcat前后端分离，SpringBoot提供接口，将用户登录信息保存到redis中，shiro+aop拦截用户请求做权限认证
