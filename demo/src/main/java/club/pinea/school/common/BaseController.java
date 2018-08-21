@@ -12,6 +12,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import club.pinea.school.common.exception.NoUserException;
 import club.pinea.school.util.AjaxResult;
 
+/**
+ * 处理controller异常
+ * @author Administrator
+ *
+ */
 public class BaseController {
 	
 	

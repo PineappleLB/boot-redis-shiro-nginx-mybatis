@@ -84,6 +84,12 @@ public class LoginController extends BaseController{
 		return new AjaxResult().success("登录成功");
 	}
 	
-	
+	@ResponseBody
+	@RequestMapping(value="/logout", method=RequestMethod.POST)
+	public AjaxResult logout(@RequestParam("sessionId")String sessionId) {
+		ShiroUtil.getSubject().logout();
+		jedisService.logout(sessionId);
+		return new AjaxResult().addSuccess("退出成功！");
+	}
 
 }
